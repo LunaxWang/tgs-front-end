@@ -4,6 +4,7 @@ import Login from "./userComponents/Login";
 import Register from "./userComponents/Register";
 import Layout from "./userComponents/Layout";
 import { Routes, Route } from 'react-router-dom';
+import UserPage from "./userComponents/UserPage";
 
 function App() {
     return (
@@ -12,7 +13,7 @@ function App() {
                 {/* public routes */}
                 <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<Register />} />
-                {/*<Route path="linkpage" element={<LinkPage />} />*/}
+                <Route path="/home" element={<UserPage />} />
                 {/*<Route path="unauthorized" element={<Unauthorized />} />*/}
 
                 {/* we want to protect these routes */}
